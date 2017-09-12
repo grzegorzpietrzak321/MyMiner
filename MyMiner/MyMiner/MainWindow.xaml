@@ -3,10 +3,85 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MyMiner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="502" Width="804">
+    <Grid Margin="0,0,0,0">
+        <Button Content="Zamknij" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" RenderTransformOrigin="5.12,2.774" Margin="707,440,0,0"/>
+        <Button Content="Zabij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="712,343,0,0"/>
+        <TabControl HorizontalAlignment="Left" Height="400" Margin="37,22,0,0" VerticalAlignment="Top" Width="600">
+            <TabItem Header="Preset">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="ETH" Width="100" Height="100" Margin="10,10,484,262" />
+                    <Button Content="ETC SIA"  Width="100" Height="100" Margin="134,126,360,146" />
+                    <Button Content="ZCASH@nanopool"  Width="100" Height="100" Margin="257,10,237,262" />
+                    <Button Content="MUSIC"  Width="100" Height="100" Margin="378,10,116,262" />
+                    <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="101,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="392"/>
+                    <Button Content="ETC" Width="100" Height="100" Margin="134,10,360,262" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Wallest">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="ETH" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxEth" HorizontalAlignment="Left" Height="23" Margin="82,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxEth" HorizontalAlignment="Left" Margin="464,30,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Nanopool.org"/>
+                        <ComboBoxItem Content="Ethermine.org"/>
+                        <ComboBoxItem Content="Ethpool.pl"/>
+                    </ComboBox>
+
+                    <Label Content="ETC" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxEtc" HorizontalAlignment="Left" Height="23" Margin="82,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxEtc" HorizontalAlignment="Left" Margin="464,60,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Nanopool.org"/>
+                        <ComboBoxItem Content="Ethermine.org"/>
+                        <ComboBoxItem Content="Etcpool.pl"/>
+                    </ComboBox>
+
+                    <Label Content="SIA" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxSia" HorizontalAlignment="Left" Height="23" Margin="82,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxSia" HorizontalAlignment="Left" Margin="464,90,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Nanopool.org"/>
+                    </ComboBox>
+
+                    <Label Content="ZCASH" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxZcash" HorizontalAlignment="Left" Height="23" Margin="82,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxZcash" HorizontalAlignment="Left" Margin="464,120,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Nanopool.org"/>
+                        <ComboBoxItem Content="Ethermine.org"/>
+                    </ComboBox>
+
+                    <Label Content="MONERO" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxMonero" HorizontalAlignment="Left" Height="23" Margin="82,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxMonero"  HorizontalAlignment="Left" Margin="464,150,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Nanopool.org"/>
+                    </ComboBox>
+
+                    <Label Content="MUSIC" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxMusic" HorizontalAlignment="Left" Height="23" Margin="82,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxMusic" HorizontalAlignment="Left" Margin="464,180,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="nomnom.technology"/>
+                    </ComboBox>
+
+                    <Label Content="UBIQ" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxUbiq" HorizontalAlignment="Left" Height="23" Margin="82,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxUbiq" HorizontalAlignment="Left" Margin="464,210,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Ubiqpool.io"/>
+                    </ComboBox>
+
+                    <Button Content="Zapisz" HorizontalAlignment="Left" Margin="509,342,0,0" VerticalAlignment="Top" Width="75" />
+                    <Label Content="EXP" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TbxExp" HorizontalAlignment="Left" Height="23" Margin="82,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+                    <ComboBox x:Name="CbxExp" HorizontalAlignment="Left" Margin="464,237,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Exppool.pl"/>
+                    </ComboBox>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+        <Button Content="Uruchom" HorizontalAlignment="Left" Margin="712,386,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <CheckBox Content="Tryb experta" HorizontalAlignment="Left" Margin="38,435,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+
     </Grid>
 </Window>

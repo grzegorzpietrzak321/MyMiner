@@ -14,6 +14,7 @@ namespace MyMiner
         public MainWindow()
         {
             InitializeComponent();
+            StatusBar.Text = Props.ShowVersion();
         }
 
         public List<Wallet> LoadWalletsFromFile()

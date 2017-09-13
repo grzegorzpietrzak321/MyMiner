@@ -6,8 +6,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="502" Width="804">
     <Grid Margin="0,0,0,0">
-        <Button Content="Zamknij" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" RenderTransformOrigin="5.12,2.774" Margin="707,440,0,0"/>
-        <Button Content="Zabij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="712,343,0,0"/>
+        <Button Content="Zamknij" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" RenderTransformOrigin="5.12,2.774" Margin="711,372,10,0"/>
+        <Button Content="Zabij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="709,275,0,0"/>
         <TabControl HorizontalAlignment="Left" Height="400" Margin="37,22,0,0" VerticalAlignment="Top" Width="600">
             <TabItem Header="Preset">
                 <Grid Background="#FFE5E5E5">
@@ -79,9 +79,10 @@
 
 
         </TabControl>
-        <Button Content="Uruchom" HorizontalAlignment="Left" Margin="712,386,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Uruchom" HorizontalAlignment="Left" Margin="709,318,0,0" VerticalAlignment="Top" Width="75"/>
 
-        <CheckBox Content="Tryb experta" HorizontalAlignment="Left" Margin="38,435,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <CheckBox Content="Tryb experta" HorizontalAlignment="Left" Margin="704,10,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <TextBox x:Name="StatusBar" HorizontalAlignment="Left" Height="21" Margin="5,440,0,0" VerticalAlignment="Top" Width="784" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>

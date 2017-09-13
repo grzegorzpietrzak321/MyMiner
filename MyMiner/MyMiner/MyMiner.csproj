@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -62,6 +63,7 @@
     <Compile Include="Pool.cs" />
     <Compile Include="PoolAddress.cs" />
     <Compile Include="ProcessManager.cs" />
+    <Compile Include="Props.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="Wallet.cs" />
     <Page Include="MainWindow.xaml">

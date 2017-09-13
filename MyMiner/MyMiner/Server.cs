@@ -11,5 +11,8 @@ namespace MyMiner
         {
             Pools.Add(pool);
         }
+
+
+
     }
 }

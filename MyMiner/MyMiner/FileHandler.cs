@@ -11,14 +11,7 @@ namespace MyMiner
 
         public static string ReadFromFile(string filename)
         {
-            if (File.Exists(filename))
-            {
-                return File.ReadAllText(filename);
-            }
-            else
-            {
-                return null;
-            }
+            return File.Exists(filename) ? File.ReadAllText(filename) : null;
         }
     }
 }
